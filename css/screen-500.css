@@ -1,0 +1,329 @@
+@media (min-width:251px) and (max-width:500px) {
+
+ 
+
+    /* start navbar "header" */
+    nav {
+        width: 100%;
+        background-color: #000;
+        height: 8rem;
+        position: fixed;
+        right: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 99;
+    }
+
+    .nav-list {
+        width: 100%;
+        height: 85vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000eb;
+        position: fixed;
+        left: 0;
+        bottom: -100vh;
+        transition: bottom 650ms;
+        z-index: 99
+    }
+
+    nav .navbar-brand p {
+        margin-left: 25px;
+    }
+
+    .nav-list.open {
+        bottom: -17px;
+    }
+
+    .nav-item {
+        position: relative;
+        line-height: 3rem;
+        transition-delay: .5s;
+        visibility: hidden;
+    }
+
+    .cantactIcon-i {
+        display: block;
+
+    }
+
+    .cantactIcon-i .fa {
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    /* End navbar "header" */
+    /* Start Home section */
+
+       .movy {
+        flex-direction: column-reverse;
+    }
+
+    .myMervat {
+        float: right;
+        margin-top: 130px;
+        margin-right: 20px;
+    }
+
+    .mervat {
+        height: 235px;
+        max-width: 235px;
+        margin-top: -30px;
+
+    }
+
+    .main-wrapper {
+        margin-left: 0px;
+    }
+
+    .wrapper .static-txt {
+        color: #FFF;
+        font-size: 26px;
+        margin-top: 35px;
+
+    }
+
+    .dynamic-txts li {
+        font-size: 35px;
+        color: crimson;
+        font-weight: 400;
+        /* position: relative;
+        top: 0;
+        left: -32px; */
+    }
+
+    .wrapper .dynamic-txts {
+        margin-top: -14px;
+        margin-left: -143px;
+    }
+
+    /* Start botton called view my works */
+
+    .links {
+        height: 200px;
+        padding: 10px 6px;
+        margin-left: 54px;
+        margin-top: 10px;
+    }
+
+    .links .veiw {
+        width: 100%;
+        background: none;
+        padding: 8px 11px;
+        text-align: center;
+        height: 65px;
+        margin: 0px 0px 35px 0px;
+        border-radius: 6px;
+    }
+
+    .links .veiw a {
+        color: #FFF;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    /* End botton called view my works */
+
+    /* start  Contact arrow */
+
+    .links .contct {
+        width: 100%;
+        background: none;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-size: 25px;
+    }
+
+    .links .contct a {
+        margin-left: -210px;
+    }
+
+    .links .contct a:hover {
+        color: crimson;
+    }
+
+    .links .contct .fa-caret-down {
+        margin: 10px;
+        font-size: 25px
+    }
+
+    /* End  Contact arrow */
+
+    /* End Home section */
+    .home .home-content .text-2 {
+        font-size: 50px;
+
+    }
+
+    .home .home-content .text-3 {
+        font-size: 27px;
+
+    }
+
+
+    /* Organize arrow down */
+    .arrwo .fa-arrow-down:hover {
+        color: crimson;
+    }
+
+    /* start About Section */
+    section .title {
+        font-size: 24px;
+    }
+
+    .max-width {
+        max-width: 400px;
+    }
+
+    section .title::after {
+        font-size: 18px;
+    }
+
+    .about .about-content .column {
+        width: 100%;
+
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+
+    }
+
+    .about .about-content .left img {
+        width: 300px;
+        height: 425px;
+        margin-top: 30px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+
+    .about .about-content .right p {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .about .about-content .right .text {
+        font-size: 19px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        margin-left: -8px;
+    }
+
+    .about .about-content .right .text span {
+        color: crimson;
+        font-size: 17px;
+    }
+
+    .about .about-content .right a {
+        font-size: 16px;
+    }
+
+    /* End About Section */
+
+    /*Start Services section */
+    .services .serv-content .card {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .services .title::before {
+
+        width: 160px;
+    }
+
+    .services .title::after {
+        font-size: 14px;
+    }
+
+
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .skills .title::after {
+        font-size: 16px;
+
+        /*End Services section */
+
+
+    }
+
+
+
+    /* start Contact section */
+
+
+    #contacting .title::after {
+        font-size: 13px;
+    }
+
+    #contacting .contactLeft {
+        width: 100%;
+        /* margin-bottom: 35px; */
+    }
+
+    #contacting .contactRight {
+        width: 100%;
+        /* margin-bottom: 35px; */
+    }
+
+    .contactLeft .cantactIcons i {
+        padding: 0px;
+        margin-left: 14px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .contactLeft .injoy {
+        margin: 18px 0px;
+        text-align: left;
+        font-size: 17px;
+        max-width: 368px;
+    }
+
+    .contactLeft .sham {
+        color: #000;
+        text-align: left;
+        font-size: 17px;
+        margin: 0px;
+    }
+
+    .wrapper .btnn input[type="submit"] {
+        width: 85%;
+    }
+
+
+    /* End Contact section */
+    /*start footer*/
+
+    footer {
+        padding: 18px 19px 145px 23px;
+    }
+
+    .cantactIcon-i2 {
+        float: left;
+        padding: 10px 93px;
+    }
+
+    footer .created {
+        float: left;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .cantactIcon-i2 i {
+        padding: 20px 25px 10px 0px;
+        color: #FFF;
+        font-size: 25px;
+    }
+
+    /*End footer*/
+}

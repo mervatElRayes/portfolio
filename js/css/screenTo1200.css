@@ -1,0 +1,618 @@
+@media (min-width: 992px) and (max-width: 1200px) {
+  .blockk {
+    text-align: center;
+    min-height: 625px;
+    margin-bottom: 20px;
+    margin-left: -15px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .menu-btn_burger {
+    margin-top: 6px;
+  }
+
+  .nav-overlay {
+    position: absolute;
+    top: 105px;
+  }
+
+  .nav-overlay .cantactIcon-i {
+    margin-left: 270px;
+  }
+
+  .nav-overlay ul li span i {
+    color: #fff;
+    font-size: 30px;
+    padding: 45px;
+    cursor: pointer;
+  }
+
+  .banner {
+    height: 1147vh;
+  }
+
+  .hero {
+    height: 375px;
+    border-radius: 50%;
+    border: 10px solid rgb(82 112 82 / 98%);
+    animation: scale-in-center 3s ease 0s 1 normal none;
+  }
+
+  @keyframes scale-in-center {
+    0% {
+      transform: scale(0.75);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .boxx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 130px;
+    margin: 50px auto;
+    background: #000;
+    overflow: hidden;
+    margin-top: 110px;
+    margin-left: -6px;
+  }
+
+  .box {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkgreen; */
+  }
+
+  .box h2 {
+    color: #fff;
+    font-size: 4.2em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff, 0 0 120px #00b3ff;
+  }
+
+  .lightbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    z-index: 2;
+    box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff, 0 0 120px #00b3ff;
+    animation: animatelightbar 5s linear infinite;
+  }
+
+  @keyframes animatelightbar {
+    0%,
+    5% {
+      transform: scaleY(0) translateX(0);
+    }
+
+    10% {
+      transform: scaleY(1) translateX(0);
+    }
+
+    90% {
+      transform: scaleY(1) translateX(calc(600px - 10px));
+    }
+
+    95%,
+    100% {
+      transform: scaleY(0) translateX(calc(600px - 10px));
+    }
+  }
+
+  .topLayer {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    animation: animatetopLayer 10s linear infinite;
+  }
+
+  @keyframes animatetopLayer {
+    0%,
+    2.5% {
+      transform: translateX(0);
+    }
+
+    5% {
+      transform: translateX(0);
+    }
+
+    45% {
+      transform: translateX(100%);
+    }
+
+    47.5%,
+    50% {
+      transform: translateX(100%);
+    }
+
+    50.001%,
+    52.5% {
+      transform: translateX(-100%);
+    }
+
+    55% {
+      transform: translateX(-100%);
+    }
+
+    95% {
+      transform: translateX(0%);
+    }
+
+    97.5%,
+    50% {
+      transform: translateX(0%);
+    }
+  }
+
+  /* start arrangment the typer that content of I'm Free Lancer ... into screen from 992 TO 1200PX */
+
+  .typer {
+    font-size: 38px;
+    color: #fff;
+    text-shadow: -1px -6px 4px rgb(70 206 70 / 98%);
+  }
+
+  /* End arrangment the typer that content of I'm Free Lancer ... into screen from 992 TO 1200PX */
+
+  /* start arragment button that named veiw my works .... into screen from 992 TO 1200PX */
+  .links {
+    height: 53px;
+    margin: 0px;
+    display: inline-block;
+    margin-top: 103px;
+  }
+
+  .links .veiw a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .links .veiw {
+    padding: 2px 55px;
+    height: 100%;
+    font-size: 19px;
+    background-color: rgb(82 112 82 / 98%);
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #009688;
+    transition: ease-in-out 1.9s;
+    border: 1px solid rgb(82 112 82 / 98%);
+    outline: none;
+  }
+
+  .links .veiw:hover {
+    box-shadow: inset 250px 1px 1px 1px #000;
+  }
+
+  /* End arragment button that named veiw my works .... into screen from 992 TO 1400PX  */
+  /* Start arragment arrow that named contact .... into screen from 992 TO 1400PX */
+  .contct {
+    background-color: #000;
+    border: none;
+  }
+
+  .contactMe {
+    font-size: 20px;
+    color: green;
+    margin: 12px 7px;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  .contactMe::before {
+    color: rgb(82 112 82 / 98%);
+    background-color: transparent;
+    font-weight: bold;
+    content: "Contact Me";
+    font-size: 19px;
+    margin: 8px 0px;
+    text-decoration: underline;
+    padding: 6px 12px;
+  }
+
+  /* End arragment arrow that named contact .... into screen from 992 TO 1400PX  */
+
+  /* Start arragment "arrow that down".... into screen from 992 TO 1400PX */
+  .arrwo {
+    text-align: center;
+    bottom: 20px;
+    position: relative;
+  }
+
+  .arrwo .icon-arrow-down1 {
+    font-size: 25px;
+    color: rgb(82 112 82 / 98%);
+    animation: bounce-top 1s ease 0s infinite normal none;
+  }
+
+  @keyframes bounce-top {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* End arragment "arrow that down".... into screen from 992 TO 1200PX */
+
+  /* start arrangment the about section that content of circle "22" ... atc in screen from 992 TO 1200px*/
+
+  #about {
+    height: auto;
+  }
+
+  #about h4 {
+    padding: 2px 5px;
+    font-size: 17px;
+    background-color: #e9e94399;
+    margin: 50px auto;
+    max-width: 110px;
+  }
+
+  #about h1 {
+    margin: 20px 10px 55px 5px;
+    font-weight: bold;
+    font-size: 44px;
+  }
+
+  .yearsExper h2 {
+    color: green;
+    margin-bottom: 20px;
+  }
+
+  .yearsExper h2 .sherif {
+    border-bottom: 4px solid #e9e94399;
+    font-weight: bold;
+    font-size: 33px;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px;
+    line-height: 33px;
+  }
+
+  .yearsExper h2 .shicko {
+    border-bottom: 4px solid #e9e94399;
+    font-weight: bold;
+    font-size: 33px;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px;
+    line-height: 33px;
+  }
+
+  .yearsExper .pragrph {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 0px;
+    max-width: 690px;
+    height: auto;
+  }
+
+  .twinty {
+    padding: 10px 25px;
+    margin: 10px 5px 10px 18px;
+    background-color: #e9e94399;
+    border-radius: 50%;
+    display: inline-flex;
+  }
+
+  .twinty p {
+    font-size: 70px;
+    font-weight: bold;
+
+    animation: scale-up-center 1s ease 0s 1 normal none;
+  }
+
+  @keyframes scale-up-center {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .yearsExper h2 {
+    color: #000;
+    margin-bottom: 20px;
+    margin-left: -110px;
+  }
+
+  .year {
+    margin-top: 40px;
+    font-size: 35px;
+    margin-left: 135px;
+  }
+
+  /* start arrangment Icons email, Address, data .... atc into section About Me */
+
+  .dataA {
+    text-align: center;
+    margin: 30px 10px -17px 10px;
+  }
+
+  .dataA i {
+    color: #e9e94399;
+    font-size: 30px;
+  }
+
+  /* End arrangment Icons email, Address, data .... atc into section About Me */
+
+  /*End arrangment the about section that content of circle "22" ... atc in screen from 992 TO 1200px */
+
+  /* start arrangment the What I do section that content title How I can help your next project ... atc in screen from 0 TO 250px */
+  #what-i-do {
+    height: auto;
+  }
+
+  #what-i-do h4 {
+    padding: 4px 8px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #e9e94399;
+    margin: 10px auto;
+    display: inline-block;
+  }
+
+  /* End arrangment the "Resume" section that content title A summary of My Resume ... atc in screen from 401 TO 991px */
+
+  .resumeA {
+    padding: 0px 0px 5px 8px;
+  }
+
+  /* Start button that named Download CV ... into Resume Section */
+  .downloadcv {
+    background-color: #009688;
+    color: #fff;
+    width: 160px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin: 35px -13px;
+    border: 2px solid rgb(82 112 82 / 98%);
+    transition: ease-in-out 1.9s;
+    box-shadow: inset 0 0 0 0 #009688;
+    margin-left: -20px;
+  }
+
+  .downloadcv:hover {
+    box-shadow: inset 160px 1px 1px 1px #000;
+  }
+
+  /* End button that named Download CV ... into Resume Section */
+
+  /* End arrangment the "Resume" section that content title A summary of My Resume ... atc in screen from 0 TO 250px */
+  /*Start faq section that content of Keyboard On desk or Office */
+
+  .faqqq h5 {
+    font-size: 1rem;
+    background-color: yellow;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .faqqq h2 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 35px 0px 50px -85px;
+  }
+
+  /*END faq section that content of Keyboard On desk or Office*/
+  /* Start section Accordion that content summary details in basic format*/
+  details {
+    padding: 0 1rem;
+    margin-left: -60px;
+  }
+
+  details > summary {
+    justify-content: space-between;
+    padding: 0px;
+    max-width: 375px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+    margin: 15px 15px 0px 40px;
+    text-align: left;
+    color: #6d72749e;
+  }
+
+  .fa-chevron-circle-up {
+    color: rgb(82 112 82 / 98%);
+    font-size: 30px;
+    margin-left: -25px;
+    padding: 10px 13px;
+  }
+
+  .fa-chevron-circle-down {
+    color: rgb(82 112 82 / 98%);
+    font-size: 30px;
+    margin-left: -25px;
+    padding: 10px 13px;
+  }
+
+  details p {
+    margin-left: 35px;
+    width: auto;
+    height: auto;
+  }
+
+  #biglamp .lampimg {
+    width: auto;
+    max-width: 455px;
+    height: 465px;
+    margin: 69px 4px 50px 10px;
+  }
+
+  /* End section Accordion that content summary details in basic format*/
+  /* start speak client  "testimonal" ...*/
+
+  #carouselExampleCaptions .carousel-inner {
+    position: relative;
+  }
+
+  #carouselExampleCaptions h1 {
+    color: #fff;
+    position: absolute;
+    top: 125px;
+    left: 233px;
+    font-size: 45px;
+    font-weight: bold;
+    z-index: 999;
+  }
+
+  .carousel-caption p {
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 0px;
+    right: 15%;
+    top: -70%;
+    left: 15%;
+  }
+
+  .carousel-item #client {
+    margin-bottom: 17px;
+  }
+
+  .carousel-item h5 {
+    color: #fff;
+    margin: 10px 0px 15px 0px;
+    font-size: 22px;
+  }
+
+  /* End speak client  "testimonal" ...*/
+  /* start Contact Section */
+
+  #contact {
+    width: 100%;
+    height: auto;
+    background-color: #80808040;
+  }
+
+  .contactLeft {
+    padding: 20px 10px 20px 20px;
+  }
+
+  .contactLeft h1 {
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    font-size: 44px;
+  }
+
+  .contactLeft .injoy {
+    color: #000;
+    text-align: left;
+    font-size: 26px;
+    max-width: 510px;
+  }
+
+  .contactLeft h5 {
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .contactLeft .sham {
+    color: #000;
+    text-align: left;
+    font-size: 22px;
+    margin: 10px 0px;
+  }
+
+  .contactLeft p {
+    color: #000;
+    text-align: left;
+    font-size: 22px;
+    margin: 30px 0px;
+  }
+
+  /* start Contact Section ... "right section" */
+
+  /* End Contact Section ... "right section" */
+
+  /* start  footer*/
+  .footer {
+    margin-top: -19px;
+  }
+
+  .footer .cop {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 29px;
+  }
+
+  .footer .cop a {
+    color: #ffa502;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .footer .design {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 29px;
+  }
+
+  .footer .design a {
+    color: #ffa502;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  /* End  footer*/
+  /* Organize icons of icomoon */
+  .icon-snowflake-o,
+  .icon-display,
+  .icon-airplane,
+  .icon-paint-brush,
+  .icon-bullhorn,
+  .icon-address-card-o
+
+  {
+    color:rgb(82 112 82 / 98%);
+    font-size: 26px;
+  }
+}

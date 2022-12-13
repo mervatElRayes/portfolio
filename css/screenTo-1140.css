@@ -1,0 +1,174 @@
+@media (min-width:992px) and (max-width:1140px) {
+    nav .navbar-brand p {
+
+        margin-left: 46px;
+    }
+
+    /* Start botton called view my works & arrow contact */
+    .links {
+
+        display: flex;
+        justify-content: space-around;
+        margin-top: 72px;
+        margin-left: 185px;
+    }
+
+    .links .veiw a {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .links .veiw {
+        padding: 4px 50px;
+        height: 58px;
+        max-width: 240px;
+        width: 100%;
+        font-size: 14px;
+        text-align: left;
+        background: none;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 0 grey;
+        transition: ease-in-out 1.9s;
+        border: 1px solid #FFF;
+        outline: none;
+        margin-left: -151px;
+
+    }
+
+    .links .contct {
+        width: 100%;
+        background: none;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-size: 25px;
+    }
+
+    .links .contct a {
+        font-weight: 600;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .links .contct a:hover {
+        color: crimson;
+    }
+
+    .links .contct .fa-caret-down {
+        margin: 8px;
+        font-size: 25px;
+    }
+
+    /* End botton called view my works & arrow contact */
+
+
+    .wrapper {
+        margin-top: 95px;
+    }
+
+
+
+    /**** Start About Section ****/
+    section .title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+
+    section .title::after {
+        position: absolute;
+        bottom: -11px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding: 5px;
+        background: #FFF;
+        transform: translateX(-50%);
+    }
+
+    #about {
+        padding: 50px 0;
+    }
+
+    .about .title::after {
+        content: "who i am";
+    }
+
+    .about .about-content,
+    .services .serv-content,
+    .skills .skills-content,
+    .contact .contact-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about .about-content .left {
+        width: 45%;
+    }
+
+    .about .about-content .left img {
+        width: 400px;
+        height: 506px;
+        border-radius: 6px;
+    }
+
+    .about .about-content .right {
+        width: 55%;
+    }
+
+    .about .about-content .right .text {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        margin-left: 51px;
+    }
+
+    .about .about-content .right .text span {
+        color: crimson;
+
+    }
+
+    .about .about-content .right p {
+        text-align: justify;
+        margin-left: 70px;
+
+    }
+
+    .about .about-content .right a {
+        display: inline-block;
+        background: crimson;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin-top: 30px;
+        margin-left: 145px;
+        border-radius: 6px;
+        border: 2px solid crimson;
+        transition: all 0.3s ease;
+
+    }
+
+    .about .about-content .right a:hover {
+        color: crimson;
+        background: none;
+    }
+
+    /* End about Section */
+
+
+
+
+    /**** End About Section ****/
+
+}

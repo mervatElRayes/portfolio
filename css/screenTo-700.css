@@ -1,0 +1,295 @@
+  @media (min-width:401px) and (max-width:700px) {
+
+    /* start navbar "header" */
+    nav {
+      width: 100%;
+      background-color: #000;
+      height: 8rem;
+      position: fixed;
+      right: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 99;
+    }
+
+
+
+
+
+    .nav-list {
+      width: 100%;
+      height: 85vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000eb;
+      position: fixed;
+      left: 0;
+      bottom: -100vh;
+      transition: bottom 650ms;
+      z-index: 99
+    }
+
+    .nav-list.open {
+      bottom: -17px;
+    }
+
+    .nav-item {
+      position: relative;
+      line-height: 3rem;
+      transition-delay: .5s;
+      visibility: hidden;
+    }
+
+    .cantactIcon-i {
+      display: block;
+
+    }
+
+
+
+    /*start Organaize humborger btn"menu" */
+    .menu-btn {
+      position: relative;
+      float: right;
+      right: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+      /* border: 3px solid #FFF;*/
+    }
+
+
+
+    /*End Organaize humborger btn"menu" */
+    /* End navbar "header" */
+
+
+    .movy {
+      flex-direction: column-reverse;
+    }
+
+
+
+    .max-width {
+      padding: 0 23px;
+    }
+
+    .home .home-content .text-2 {
+      font-size: 60px;
+
+    }
+
+    .home .home-content .text-3 {
+      font-size: 32px;
+
+    }
+
+    .home .home-content a {
+      font-size: 20px;
+
+    }
+
+    #home .wrapper {
+      margin-top: 50px;
+    }
+
+    /****************************************/
+    /* Start Home section */
+
+    .myMervat {
+      float: right;
+      margin-top: 130px;
+      margin-right: 20px;
+    }
+
+    .mervat {
+      height: 340px;
+      max-width: 340px;
+      margin-top: -30px;
+      margin-right: 74px;
+
+    }
+
+    .wrapper .static-txt {
+      color: #FFF;
+      font-size: 40px;
+      margin-top: 35px;
+
+    }
+
+    .dynamic-txts li {
+      font-size: 45px;
+      color: crimson;
+      font-weight: 400;
+      position: relative;
+      top: 0;
+      left: -32px;
+    }
+
+    .wrapper .dynamic-txts {
+      margin-top: -14px;
+      margin-left: -60px;
+    }
+
+
+    .links {
+
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 72px;
+      margin-left: 90px;
+    }
+
+    .links .veiw a {
+      text-decoration: none;
+      color: #FFF;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .links .veiw {
+      padding: 4px 50px;
+      height: 58px;
+      max-width: 240px;
+      width: 100%;
+      font-size: 14px;
+      text-align: left;
+      background: none;
+      border-radius: 5px;
+      box-shadow: inset 0 0 0 0 grey;
+      transition: ease-in-out 1.9s;
+      border: 1px solid #FFF;
+      outline: none;
+      margin-left: -54px;
+
+    }
+
+    .links .veiw:hover {
+      box-shadow: inset 250px 1px 1px 1px crimson;
+      background: crimson;
+    }
+
+    /* End botton called view my works */
+
+    /* End botton called view my works */
+
+    /* End Home section */
+    .home .home-content .text-2 {
+      font-size: 50px;
+
+    }
+
+    .home .home-content .text-3 {
+      font-size: 27px;
+
+    }
+
+    /* start contact me arrow */
+    /* start  Contact arrow */
+
+    .links .contct {
+      width: 100%;
+      background: none;
+      text-align: center;
+      border: none;
+      outline: none;
+      font-size: 25px;
+    }
+
+    .links .contct a {
+      font-weight: 600;
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    .links .contct a:hover {
+      color: crimson;
+    }
+
+    .links .contct .fa-caret-down {
+      margin: 10px;
+      font-size: 25px
+    }
+
+    /* End  Contact arrow */
+
+    /* End contact me arrow */
+
+    .arrwo .fa-arrow-down:hover {
+      color: crimson;
+    }
+
+  
+    /*start about section */
+
+    .max-width {
+      max-width: 400px;
+    }
+
+    .about .about-content .column {
+      width: 100%;
+
+    }
+
+    .about .about-content .left {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px;
+
+    }
+
+    .about .about-content .left img {
+      width: 300px;
+      height: 425px;
+      margin-top: 30px;
+    }
+
+    .about .about-content .right {
+      flex: 100%;
+    }
+
+    .about .about-content .right p {
+      text-align: justify;
+      font-size: 14px;
+    }
+
+    .about .about-content .right .text {
+      font-size: 34px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      margin-top: -15px;
+      margin-left: 8px;
+    }
+
+    /* End About Section */
+    .services .serv-content .card,
+    .skills .skills-content .column {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    /* Start Footer */
+
+    footer {
+      padding: 18px 19px 120px 23px;
+    }
+
+    .cantactIcon-i2 {
+      float: left;
+      padding: 10px;
+    }
+
+    .cantactIcon-i2 i {
+      padding: 20px 25px 10px 0px;
+      color: #FFF;
+      font-size: 25px;
+    }
+
+    /* End Footer */
+  }

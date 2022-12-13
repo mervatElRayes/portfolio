@@ -1,0 +1,168 @@
+*
+{
+	-webkit-box-sizing:border-box;	
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+	outline: none
+}
+body
+{
+	font-family: arial,tahoma,sans-serif
+}
+.slider-container
+{
+	position: relative;
+	max-width: 600px;
+	height: 250px;
+	margin: 30px auto;
+}
+.slider-container img
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity .7s;
+	object-fit: contain;
+	background-image: url(../img/men.jpg)
+}
+
+.slider-container img.active
+{
+	opacity: 1
+}
+.slider-container .slider-number
+{
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	padding: 5px 10px;
+	background-color: blueviolet;
+	color: #FFF;
+	z-index: 2;
+	border: 1px solid yellow
+}
+.slider-controls
+{
+	max-width: 600px;
+	margin: auto;
+	
+	overflow: hidden
+}
+.slider-controls .next,
+.slider-controls .prev
+{
+	width: 20%;
+	height: 40px;
+	text-align: center;
+	background-color: brown;
+	color: #FFF;
+	padding: 5px 9px;
+	border-radius: 7px;
+	cursor: pointer;
+	
+}
+.slider-controls .next.disabled,
+.slider-controls .prev.disabled
+{
+	background-color: chocolate;
+	cursor: no-drop;
+}
+
+.slider-controls .next
+{
+	float: left
+}
+
+.slider-controls .prev
+{
+	float: right
+}
+
+.slider-controls .indicators
+{
+	width: 60%;
+	float: left;
+}
+
+.slider-controls .indicators ul
+{
+	text-align: center;
+	list-style: none
+}
+.slider-controls .indicators ul li
+{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid yellow;
+	background-color: cadetblue;
+	color: #FFF;
+	margin: 6px 3px;
+	border-radius: 5px;
+	cursor: pointer
+}
+
+.slider-controls .indicators ul li.active
+{
+	background-color: cornflowerblue;
+	cursor: pointer
+}
+
+
+.movy a
+{
+	background-color: #F00;
+	color: #FFF;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding-top: 25px;
+}
+.movy a:hover i{
+	animation: heartbeat .5s infinite linear;
+}
+
+@keyframes heartbeat{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+
+		transform: scale(.9);
+	}
+	100%{
+
+		transform: scale(1);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

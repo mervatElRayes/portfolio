@@ -1,0 +1,2078 @@
+ * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -o-box-sizing: border-box;
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     
+
+
+ }
+ a{
+  text-decoration: none;
+ }
+
+ body {
+     width: 100%;
+     height: 100vh;
+ }
+
+ /*Start navbar */
+ header {
+     width: 100%;
+     height: auto;
+     background-color: #000000eb;
+     position: fixed;
+     z-index: 9999;
+ }
+
+ .container {
+     width: 100%;
+     max-width: 120rem;
+     margin: 0 auto;
+     padding: 0 1.5rem;
+ }
+
+ nav {
+     width: 100%;
+     height: 8rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+
+ nav .navbar-brand p {
+     color: #FFF;
+     font-size: 30px;
+     font-weight: bold;
+     color: rgb(82 112 82 / 98%);
+     margin-left: 20px;
+ }
+
+ .nav-list .nav-item a.active {
+     color: #c0392b;
+ }
+
+ .nav-list {
+     display: flex;
+     list-style: none;
+ }
+
+ .nav-link {
+     font-size: 17px;
+     text-decoration: none;
+     display: block;
+     margin: 0px .1rem;
+     color: #FFF;
+     font-weight: bold;
+     /* down line show and hide links smoothly*/
+     transform: scale(0);
+     transition: transform 650ms;
+ }
+
+ .nav-link:hover {
+     color: rgb(82 112 82 / 98%);
+ }
+
+ .nav-item {
+     position: relative;
+     line-height: 2rem;
+     transition-delay: .5s;
+     visibility: hidden;
+
+ }
+
+ .nav-item::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     background-color: rgb(82 112 82 / 98%);
+     left: 0;
+     bottom: -7px;
+     transform: scaleX(0);
+     transform-origin: right;
+     transition: transform 650ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+
+ .nav-item:hover::before {
+     transform: scaleX(1);
+     transform-origin: left;
+ }
+
+ .fa-arrow-circle-o-down:before {
+     content: "\f01a";
+     color: rgb(82 112 82 / 98%);
+ }
+ /* start Organize icons of Icomoon social media face, twitter, github */
+ .footerIcons .icon-twitter:hover {
+  color: #00b3ff;
+
+}
+
+.footerIcons .icon-github:hover {
+  color: #333;
+
+}
+
+.footerIcons .icon-instagram1:hover {
+  color: gray;
+
+}
+
+
+
+
+.cantactIcon-i .fa-github:hover {
+  color: #000;
+}
+
+.cantactIcon-i .fa-instagram:hover {
+  color: gray;
+}
+
+.cantactIcon-i .fa-facebook-official:hover {
+  color: rgb(81, 81, 216);
+}
+
+.cantactIcon-i .fa-dribbble:hover {
+  color: #e21a95;
+}
+
+
+ /* End Organize icons of Icomoon social media face, twitter, github */
+
+
+
+
+ /*start hamburger */
+ .menu-btn {
+     position: relative;
+     float: right;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     transition: all .5s ease-in-out;
+     /* border: 3px solid #FFF; */
+ }
+
+ .menu-btn_burger {
+     width: 22px;
+     height: 2px;
+     background-color: rgb(82 112 82 / 98%);
+     border-radius: 5px;
+
+     transition: all .5s ease-in-out;
+ }
+
+ .menu-btn_burger::before,
+ .menu-btn_burger::after {
+     content: '';
+     position: absolute;
+     width: 22px;
+     height: 2px;
+     background-color: rgb(82 112 82 / 98%);
+     border-radius: 5px;
+
+     transition: all .5s ease-in-out;
+ }
+
+ .menu-btn_burger::before {
+     transform: translateY(-8px);
+ }
+
+
+ .menu-btn_burger::after {
+     transform: translateY(8px);
+ }
+
+ .menu-btn.open .menu-btn_burger {
+     transform: translateX(-25px);
+     background-color: transparent;
+
+
+ }
+
+ .menu-btn.open .menu-btn_burger::before {
+     transform: rotate(45deg) translate(15px, -15px);
+ }
+
+ .menu-btn.open .menu-btn_burger::after {
+     transform: rotate(-45deg) translate(15px, 15px);
+ }
+
+ /*here execute the navLink hide and show with hamburger-menu smoothly*/
+ .nav-list.open .nav-link {
+     transform: scale(1);
+     color: #FFF;
+ }
+
+ .nav-list.open .nav-item {
+     transition-delay: initial;
+     visibility: visible;
+ }
+
+ /*here show the link (word home about--atc) one afert one */
+ .nav-list.open .nav-item:nth-child(1) .nav-link {
+     transition-delay: .5s;
+ }
+
+ .nav-list.open .nav-item:nth-child(2) .nav-link {
+     transition-delay: .4s;
+ }
+
+ .nav-list.open .nav-item:nth-child(3) .nav-link {
+     transition-delay: .3s;
+ }
+
+ .nav-list.open .nav-item:nth-child(4) .nav-link {
+     transition-delay: .2s;
+ }
+
+ .nav-list.open .nav-item:nth-child(5) .nav-link {
+     transition-delay: .1s;
+ }
+
+ /*Reverse Animation*/
+ .nav-list .nav-item:nth-child(1) .nav-link {
+     transition-delay: .1s;
+ }
+
+ .nav-list .nav-item:nth-child(2) .nav-link {
+     transition-delay: .2s;
+ }
+
+ .nav-list .nav-item:nth-child(3) .nav-link {
+     transition-delay: .3s;
+ }
+
+ .nav-list .nav-item:nth-child(4) .nav-link {
+     transition-delay: .4s;
+ }
+
+ .nav-list .nav-item:nth-child(5) .nav-link {
+     transition-delay: .5s;
+ }
+
+ .cantactIcon-i {
+     display: none;
+ }
+
+ /* End navbar "header" */
+
+
+
+ /*start fixed menu .. (into home section)*/
+
+
+ .fixed-menu {
+     background-color: #fff;
+     color: rgb(82 112 82 / 98%);
+     padding: 10px;
+     position: fixed;
+     left: -220px;
+     top: 130px;
+     height: 180px;
+     min-width: 220px;
+     z-index: 9;
+ }
+
+ .fixed-menu .icon-gear {
+     position: absolute;
+     right: -30px;
+     top: 60px;
+     background-color: #333;
+     color:rgb(82 112 82 / 98%);
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     text-align: center;
+     border-radius: 0 10px 10px 0;
+     cursor: pointer
+ }
+
+ .fixed-menu .change-colors li {
+     width: 25px;
+     height: 25px;
+     display: inline-block;
+     margin-top: 5px;
+     cursor: pointer;
+
+ }
+
+ .fixed-menu .change-colors [data-color='red'] {
+     background-color: #c0392b
+ }
+
+ .fixed-menu .change-colors [data-color='blue'] {
+     background-color: #0e4e81
+ }
+
+ .fixed-menu .change-colors [data-color='green'] {
+     background-color: rgb(82 112 82 / 98%)
+ }
+
+ .fixed-menu .change-colors [data-color='yellow'] {
+     background-color: #e1db69
+ }
+
+ .fixed-menu .change-colors [data-color='black'] {
+     background-color: #000
+ }
+
+ /*End fixed menu .. (into home section)*/
+ /* start icon to change color in our page ..(this icone into fixed menu)*/
+
+ /* start website theme colors*/
+
+ [data-default-color='red'] #skin-color {
+     color: #c0392b
+ }
+
+ [data-default-color='red'] #skin-background {
+     background-color: #c0392b;
+     color: #000;
+ }
+
+ [data-default-color='blue'] #skin-color {
+     color: #0984e3
+ }
+
+ [data-default-color='blue'] #skin-background {
+     background-color: #0e4e81;
+     color: #fff;
+ }
+
+
+ [data-default-color='green'] #skin-color {
+     color: rgb(82 112 82 / 98%)
+ }
+
+ [data-default-color='green'] #skin-background {
+     background-color: rgb(82 112 82 / 98%);
+     color: #FFF;
+ }
+
+
+ [data-default-color='yellow'] #skin-color {
+     color: #ffa502;
+
+ }
+
+ [data-default-color='yellow'] #skin-background {
+     background-color: #e1db69;
+     color: #FFF;
+ }
+
+ [data-default-color='black'] #skin-color {
+     color: #000;
+ }
+
+ [data-default-color='black'] #skin-background {
+     background-color: #000;
+     color: #FFF;
+ }
+
+
+ /* End icon to change color in our page ..(this icone into fixed menu)*/
+
+ .blockk {
+
+     text-align: center;
+     min-height: 675px;
+     margin-bottom: 20px;
+     margin-left: -15px;
+
+ }
+
+
+
+
+ /*End recognaize block that content home, about, services.... atc into Body not into header  */
+
+ /* Start recognaize button that make load with scroll to top ... this don't have location... this for all page*/
+
+ .center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+ .progressbar {
+     width: 4rem;
+     height: 4rem;
+     background-color: rgb(203 184 184);
+     border-radius: 50%;
+     position: fixed;
+     top: 84%;
+     right: 0%;
+     transform: translate(-50%, -50%);
+     overflow: hidden;
+     z-index: 999;
+ }
+
+ .half-circle,
+ .half-circle-top {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+     transform-origin: right center;
+
+ }
+
+ .half-circle:nth-child(1) {
+     background-color: gray;
+
+ }
+
+ .half-circle:nth-child(2) {
+     background-color: gray;
+
+
+ }
+
+
+ .half-circle-top {
+     background-color: rgb(203 184 184);
+
+
+ }
+
+ .progressbar:hover .half-circle:nth-child(1) {
+     /* transform: rotate(180deg);
+    transition: transform 1s linear; */
+
+ }
+
+ .progressbar:hover .half-circle:nth-child(2) {
+     /* transform: rotate(360deg);
+    transition: transform 2s linear; */
+
+ }
+
+ .progressbar:hover .half-circle-top {
+     /* opacity: 0;
+    transition: opacity 0s 1s; */
+ }
+
+ .progressbar-circle {
+     width: 3.4rem;
+     height: 3.4rem;
+     background-color: rgb(82 112 82 / 98%);
+     border-radius: 50%;
+     font-size: 2rem;
+     z-index: 10;
+
+ }
+
+
+ .icon-chevron-up {
+     color: gray;
+     font-size: 24px;
+     margin-left: -1px;
+     margin-top: -7px;
+     padding: 0px 25px;
+ }
+
+
+ /* End organization button that make load with scroll to top*/
+
+ /* start organization big images into Home Section */
+
+
+ /* start big Imag */
+
+ #home {
+     background-color: #6c757d;
+     height: auto;
+     padding-top: 130px;
+
+ }
+
+ .hero {
+     height: 410px;
+     border-radius: 50%;
+     border: 10px solid rgb(82 112 82 / 98%);
+     animation: scale-in-center 3s ease 0s 1 normal none;
+
+ }
+
+ @keyframes scale-in-center {
+     0% {
+         transform: scale(0.75);
+         opacity: 1;
+     }
+
+     100% {
+         transform: scale(1);
+         opacity: 1;
+     }
+ }
+
+
+ .boxx {
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 130px;
+     margin: 50px auto;
+     background: #000;
+     overflow: hidden;
+     margin-top: 110px;
+     margin-left: -6px;
+ }
+
+ .box {
+     position: relative;
+     width: 100%;
+     height: 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* background-color: darkgreen; */
+
+ }
+
+ .box h2 {
+     color: #fff;
+     font-size: 4.2em;
+     font-weight: 600;
+     letter-spacing: 0.1em;
+
+     text-shadow: 0 0 10px #00b3ff,
+         0 0 20px #00b3ff,
+         0 0 40px #00b3ff,
+         0 0 80px #00b3ff,
+         0 0 120px #00b3ff;
+
+ }
+
+ .lightbar {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 10px;
+     height: 100%;
+     border-radius: 10px;
+     background: #FFF;
+     z-index: 2;
+     box-shadow: 0 0 10px #00b3ff,
+         0 0 20px #00b3ff,
+         0 0 40px #00b3ff,
+         0 0 80px #00b3ff,
+         0 0 120px #00b3ff;
+     animation: animatelightbar 5s linear infinite;
+ }
+
+ @keyframes animatelightbar {
+
+     0%,
+     5% {
+         transform: scaleY(0) translateX(0);
+     }
+
+     10% {
+         transform: scaleY(1) translateX(0);
+     }
+
+     90% {
+         transform: scaleY(1) translateX(calc(600px - 10px));
+     }
+
+     95%,
+     100% {
+         transform: scaleY(0) translateX(calc(600px - 10px));
+     }
+ }
+
+ .topLayer {
+     position: absolute;
+     top: 0;
+     left: 0%;
+     width: 100%;
+     height: 100%;
+     background: #000;
+     animation: animatetopLayer 10s linear infinite;
+ }
+
+ @keyframes animatetopLayer {
+
+     0%,
+     2.5% {
+         transform: translateX(0);
+     }
+
+     5% {
+         transform: translateX(0);
+     }
+
+     45% {
+         transform: translateX(100%);
+     }
+
+     47.5%,
+     50% {
+         transform: translateX(100%);
+     }
+
+     50.001%,
+     52.5% {
+         transform: translateX(-100%);
+     }
+
+     55% {
+         transform: translateX(-100%);
+     }
+
+     95% {
+         transform: translateX(0%);
+     }
+
+     97.5%,
+     50% {
+         transform: translateX(0%);
+     }
+ }
+
+
+ /* start arrangment the typer that content of I'm Free Lancer ... into screen from 992 TO 1200PX */
+
+ .typer {
+     font-size: 38px;
+     color: #FFF;
+     text-shadow: -1px -6px 4px #2d9495;
+ }
+
+ /* End arrangment the typer that content of I'm Free Lancer ... into screen from 992 TO 1200PX */
+
+ /* start arragment button that named veiw my works .... into screen from 992 TO 1200PX */
+ .links {
+     height: 53px;
+     margin: 0px;
+     display: inline-block;
+     margin-top: 35px;
+ }
+
+ .links .veiw a {
+     text-decoration: none;
+     color: #FFF;
+     font-weight: bold;
+ }
+
+ .links .veiw {
+     padding: 2px 55px;
+     height: 100%;
+     font-size: 19px;
+     background-color: rgb(82 112 82 / 98%);
+     border-radius: 5px;
+     box-shadow: inset 0 0 0 0 #009688;
+     transition: ease-in-out 1.9s;
+     border: 1px solid rgb(82 112 82 / 98%);
+     outline: none;
+
+ }
+
+ .links .veiw:hover {
+     box-shadow: inset 250px 1px 1px 1px #000;
+ }
+
+ /* End arragment button that named veiw my works .... into screen from 992 TO 1400PX  */
+ /* Start arragment arrow that named contact .... into screen from 992 TO 1400PX */
+ .contct {
+     background-color: #000;
+     border: none;
+ }
+
+ .contactMe {
+     font-size: 20px;
+     color: green;
+     margin: 12px 7px;
+     display: inline-block;
+     background-color: transparent;
+ }
+
+ .contactMe::before {
+     color: rgb(82 112 82 / 98%);
+     background-color: transparent;
+     font-weight: bold;
+     content: "Contact Me";
+     font-size: 19px;
+     margin: 8px 0px;
+     text-decoration: underline;
+     padding: 6px 12px;
+
+ }
+
+ /* End arragment arrow that named contact .... into screen from 992 TO 1400PX  */
+
+ /* Start arragment "arrow that down".... into screen from 992 TO 1400PX */
+ .arrwo {
+     text-align: center;
+     bottom: -30px;
+     position: relative;
+ }
+
+ .arrwo .fa-arrow-down {
+     font-size: 20px;
+     color: rgb(82 112 82 / 98%);
+     animation: bounce-top 1s ease 0s infinite normal none;
+
+ }
+
+ @keyframes bounce-top {
+     0% {
+         transform: translateY(0px);
+     }
+
+     50% {
+         transform: translateY(10px);
+     }
+
+     100% {
+         transform: translateY(0);
+     }
+ }
+
+ /* start arrangment the about section that content of circle "22" ... atc in screen from 992 TO 1200px*/
+
+ #about {
+     height: auto;
+
+ }
+
+ #about h4 {
+     padding: 2px 5px;
+     font-size: 17px;
+     background-color: #62622299;
+     margin: 50px auto;
+     max-width: 110px;
+
+ }
+
+ #about h1 {
+     margin: 20px 10px 55px 5px;
+     font-weight: bold;
+     font-size: 44px;
+ }
+
+ .yearsExper {
+     overflow: hidden;
+ }
+
+ .yearsExper h2 {
+     color: green;
+     margin-bottom: 20px;
+ }
+
+ .yearsExper h2 .sherif {
+     border-bottom: 4px solid #62622299;
+     font-weight: bold;
+     font-size: 33px;
+     color: #000;
+     font-weight: bold;
+     display: inline-block;
+     padding: 4px;
+     line-height: 33px;
+ }
+
+ .yearsExper h2 .shicko {
+     border-bottom: 4px solid #62622299;
+     font-weight: bold;
+     font-size: 33px;
+     color: #000;
+     font-weight: bold;
+     display: inline-block;
+     padding: 4px;
+     line-height: 33px;
+ }
+
+ .yearsExper .pragrph {
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 37px;
+     letter-spacing: 0px;
+     text-align: left;
+     margin-left: 0px;
+     max-width: 690px;
+     height: auto;
+
+ }
+
+ .twinty {
+     padding: 10px 25px;
+     margin: 10px 5px 10px 18px;
+     background-color: #62622299;
+     border-radius: 50%;
+     display: inline-flex;
+ }
+
+ .twinty p {
+     font-size: 70px;
+     font-weight: bold;
+
+     animation: scale-up-center 1s ease 0s 1 normal none;
+ }
+
+ @keyframes scale-up-center {
+     0% {
+         transform: scale(1);
+     }
+
+     50% {
+         transform: scale(1.5);
+     }
+
+     100% {
+         transform: scale(1);
+     }
+ }
+
+
+
+ .yearsExper h2 {
+     color: #000;
+     margin-bottom: 20px;
+
+ }
+
+
+ .year {
+     margin-top: 20px;
+     font-size: 35px;
+     margin-left: 0px;
+
+ }
+
+
+ /* start arrangment Icons email, Address, data .... atc into section About Me */
+
+
+ .Pasted .container {
+     margin-top: 0px;
+ }
+
+ .dataA {
+     text-align: center;
+     margin: 125px 10px -17px 10px;
+ }
+
+ .dataA .pastedPragraph {
+
+     font-weight: bold;
+ }
+
+
+
+ .dataA i {
+     color: #62622299;
+     font-size: 30px;
+ }
+
+
+
+ /* End arrangment Icons email, Address, data .... atc into section About Me */
+ /* start arrangment the What I do section that content title How I can help your next project ... atc in screen from 0 TO 250px */
+ #what-i-do {
+     height: auto;
+ }
+
+ #what-i-do h1 {
+     margin-top: 50px;
+ }
+
+ #what-i-do h4 {
+     padding: 4px 8px;
+     font-size: 17px;
+     text-align: center;
+     background-color: #62622299;
+     margin: 10px auto;
+     display: inline-block;
+ }
+
+ /* start arrangment Icons email, Address, data .... atc into section About Me atc in screen from 992 TO 1200px  */
+ .helped .container {
+     margin-top: 0px;
+ }
+
+
+ .helpA {
+     text-align: center;
+     margin: 30px -5px 1px 10px;
+     padding: 10px 0px 30px 0px;
+ }
+
+ .helpA .helpPragraph {
+
+     font-size: 15px;
+
+ }
+
+ .helpA i {
+     color: #62622299;
+     font-size: 34px;
+     margin-left: -16px;
+ }
+
+ .helpA h6 {
+
+     color: rgb(82 112 82 / 98%);
+     margin-top: 10px;
+     text-shadow: -1px -3px 2px #62622299;
+ }
+
+ .helpIcon {
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ /* End arrangment Icons email, Address, data .... atc into section What I do in screen from 992 TO 1200px  */
+
+
+ /*End arrangment the about section that content of circle "22" ... atc in screen from 992 TO 1200px */
+ /* start Resume */
+ #resume {
+     height: auto;
+ }
+
+ #resume h4 {
+     padding: 4px 8px;
+     font-size: 17px;
+     text-align: center;
+     background-color: #62622299;
+     margin: 10px auto;
+     display: inline-block;
+ }
+
+ #resume h1 {
+     font-weight: bolder;
+     font-size: 45px;
+
+ }
+
+ .skill {
+     font-weight: bolder;
+     font-size: 38px;
+     text-align: center;
+     margin-top: 50px;
+ }
+
+ #resume .resume .my {
+     font-weight: bold;
+     font-size: 33px;
+     margin-top: 20px;
+ }
+
+ .resumeA {
+     border-left: 2px solid #62622299;
+     margin-top: 34px;
+     padding: 0px 51px 5px 35px;
+     margin-left: -20px;
+ }
+
+ .resume .resumeA hr {
+     background-color: gray;
+ }
+
+
+ #resume h3 {
+     font-size: 24px;
+     font-weight: 600;
+     margin-left: 5px;
+     margin-top: -1px;
+     text-align: left;
+ }
+
+ .resumeA .resumePragraph {
+     font-size: 17px;
+     text-align: left;
+     line-height: 30px;
+     margin-bottom: 25px;
+     color: gray;
+ }
+
+ #resume h6 {
+     font-size: 18px;
+     margin-top: 18px;
+     text-align: left;
+     line-height: 33px;
+ }
+
+
+
+ .resume .myy {
+     font-weight: bold;
+     font-size: 33px;
+     margin-top: 20px;
+ }
+
+
+
+ /* End Resume */
+
+
+ .allSkills {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     margin: 35px auto;
+     width: 100%;
+ }
+
+
+
+
+
+
+
+
+ /* Start progress NO.1 into Section Resume */
+
+
+
+ .progrs {
+     height: 191px;
+     width: auto;
+     margin-bottom: 20px;
+ }
+
+ .mainProgress {
+     width: 100%;
+     height: 183px;
+ }
+
+ .mainProgress2 {
+     width: 100%;
+     height: 183px;
+ }
+
+
+ /*Start progress bar No.1 that coloered by blue light .. (into About section)*/
+
+ .mainProgress .animation-bar-1,
+ .mainProgress .animation-bar-2,
+ .mainProgress .animation-bar-3 {
+
+     display: block;
+     width: 100%;
+     text-align: left;
+     font-size: 16px;
+     line-height: 16px;
+     background: rgba(0, 0, 0, 0.1);
+     box-shadow: inset 0 1px 2px rgb(0 0 0 / 25%),
+         0 0px rgb(10 139 111 / 80%);
+     height: 10px;
+     border-radius: 10px;
+ }
+
+
+ .mainProgress .animation-bar-1 {
+     margin-top: 15px;
+ }
+
+
+ .mainProgress .animation-bar-2 {
+     margin-top: 55px;
+ }
+
+ .mainProgress .animation-bar-3 {
+     margin-top: 58px;
+ }
+
+
+
+ .mainProgress .animation-bar-1::before,
+ .mainProgress .animation-bar-2::before,
+ .mainProgress .animation-bar-3::before {
+
+     position: relative;
+     top: -19px;
+     font-weight: bold;
+     font-size: 14px;
+ }
+
+ .mainProgress .animation-bar-1::before {
+     content: "Web Design";
+ }
+
+
+
+ .mainProgress .animation-bar-2::before {
+     content: "Html/ Css";
+ }
+
+ .mainProgress .animation-bar-3::before {
+     content: "Java Script";
+ }
+
+
+
+ .mainProgress .animation-bar-1 span {
+     position: relative;
+     top: -17px;
+     display: block;
+     border-radius: 10px;
+     height: 10px;
+     width: 75%;
+     background-image: linear-gradient(to bottom, hsl(180, 100%, 35%), #008081);
+     animation: progress-bar-1 6s 1 ease;
+
+ }
+
+ @keyframes progress-bar-1 {
+     0% {
+         width: 20%;
+     }
+
+     100% {
+         width: 75%;
+     }
+ }
+
+ .mainProgress .animation-bar-1 span::before,
+ .mainProgress .animation-bar-2 span::before,
+ .mainProgress .animation-bar-3 span::before {
+     position: absolute;
+     right: 0;
+     bottom: 100%;
+     display: inline-block;
+     width: 0;
+     height: 0;
+     border: 10px solid green;
+     border-right-width: 0;
+     border-bottom-width: 0;
+     border-top-color: rgba(0, 0, 0, 0.1);
+     content: "";
+
+ }
+
+
+
+ /* End progress NO.1 into Section Resume */
+ /* Start progress NO.2 into Section Resume */
+
+ .mainProgress .animation-bar-2 span {
+     position: relative;
+     top: -16px;
+     display: block;
+     height: 10px;
+     width: 100%;
+     border-radius: 10px;
+     background-image: linear-gradient(to bottom, hsl(180, 100%, 35%), #008081);
+     animation: progress-bar-2 6s 1 ease;
+
+ }
+
+ @keyframes progress-bar-2 {
+     0% {
+         width: 20%;
+     }
+
+     100% {
+         width: 100%;
+     }
+ }
+
+ .mainProgress .animation-bar-1 span::after,
+ .mainProgress .animation-bar-3 span::after,
+ .mainProgress .animation-bar-2 span::after {
+     position: absolute;
+     right: 0;
+     bottom: calc(100% + 5px);
+     display: inline-block;
+     content: attr(data-label);
+     padding: 4px 8px;
+     border-radius: 3px;
+     font-size: 0.8em;
+     font-weight: bold;
+     background-color: #008081;
+     color: #fff;
+ }
+
+ /* End progress NO.2 into Section Resume */
+ /* Start progress NO.3 into Section Resume */
+
+
+ .mainProgress .animation-bar-3 span {
+     position: relative;
+     top: -16px;
+     display: block;
+     height: 10px;
+     width: 80%;
+     border-radius: 10px;
+     background-image: linear-gradient(to bottom, hsl(180, 100%, 35%), #008081);
+     animation: progress-bar-3 6s 1 ease;
+
+ }
+
+ @keyframes progress-bar-3 {
+     0% {
+         width: 20%;
+     }
+
+     100% {
+         width: 80%;
+     }
+ }
+
+ /* End progress NO.3 into Section Resume */
+ /* Start progress NO.4 into Section Resume */
+
+ .progrs2 {
+     height: 191px;
+     width: auto;
+     margin-top: -15px;
+ }
+
+ .mainProgress2 .animation-bar-4,
+ .mainProgress2 .animation-bar-5,
+ .mainProgress2 .animation-bar-6 {
+
+     display: block;
+     width: 100%;
+     margin-right: 20px;
+     font-size: 16px;
+     text-align: left;
+     line-height: 16px;
+
+     background: rgba(0, 0, 0, 0.1);
+     box-shadow: inset 0 1px 2px rgb(0 0 0 / 25%),
+         0 0px rgb(10 139 111 / 80%);
+     height: 10px;
+     border-radius: 10px;
+ }
+
+ .mainProgress2 .animation-bar-4 {
+     margin-top: 12px;
+ }
+
+
+ .mainProgress2 .animation-bar-5,
+ .mainProgress2 .animation-bar-6 {
+     margin-top: 56px;
+ }
+
+
+
+
+
+ .mainProgress2 .animation-bar-4::before,
+ .mainProgress2 .animation-bar-5::before,
+ .mainProgress2 .animation-bar-6::before {
+
+     position: relative;
+     top: -19px;
+     font-weight: bold;
+     font-size: 14px;
+ }
+
+ .mainProgress2 .animation-bar-4::before {
+     content: "React JS";
+ }
+
+ .mainProgress2 .animation-bar-5::before {
+     content: "Angular Js";
+ }
+
+
+ .mainProgress2 .animation-bar-6::before {
+     content: "Bootstrap";
+ }
+
+
+
+
+
+ .mainProgress2 .animation-bar-4 span {
+     position: relative;
+     top: -16px;
+     display: block;
+     height: 10px;
+     width: 65%;
+     border-radius: 10px;
+     background-image: linear-gradient(to bottom, hsl(180, 100%, 35%), #008081);
+     animation: progress-bar-4 6s 1 ease;
+
+ }
+
+ @keyframes progress-bar-4 {
+     0% {
+         width: 20%;
+     }
+
+     100% {
+         width: 65%;
+     }
+ }
+
+ .mainProgress2 .animation-bar-4 span::before,
+ .mainProgress2 .animation-bar-5 span::before,
+ .mainProgress2 .animation-bar-6 span::before {
+     position: absolute;
+     right: 0;
+     bottom: 100%;
+     display: inline-block;
+     width: 0;
+     height: 0;
+     border: 10px solid green;
+     border-right-width: 0;
+     border-bottom-width: 0;
+     border-top-color: rgba(0, 0, 0, 0.1);
+     content: "";
+
+ }
+
+
+ .mainProgress2 .animation-bar-4 span::after,
+ .mainProgress2 .animation-bar-5 span::after,
+ .mainProgress2 .animation-bar-6 span::after {
+     position: absolute;
+     right: 0;
+     bottom: calc(100% + 5px);
+     display: inline-block;
+     content: attr(data-label);
+     padding: 4px 8px;
+     border-radius: 3px;
+     font-size: 0.8em;
+     font-weight: bold;
+     background-color: #008081;
+     color: #fff;
+ }
+
+
+ /* End progress NO.4 into Section Resume */
+ /* Start progress NO.5 into Section Resume */
+
+
+
+
+
+ .mainProgress2 .animation-bar-5 span {
+     position: relative;
+     top: -16px;
+     display: block;
+     height: 10px;
+     width: 77%;
+     border-radius: 10px;
+     background-image: linear-gradient(to bottom, hsl(180, 100%, 35%), #008081);
+     animation: progress-bar-5 6s 1 ease;
+
+ }
+
+ @keyframes progress-bar-5 {
+     0% {
+         width: 20%;
+     }
+
+     100% {
+         width: 77%;
+     }
+ }
+
+
+ /* End progress NO.5 into Section Resume */
+ /* Start progress NO.6 into Section Resume */
+
+
+ .mainProgress2 .animation-bar-6 span {
+     position: relative;
+     top: -16px;
+     display: block;
+     height: 10px;
+     width: 95%;
+     border-radius: 10px;
+     background-image: linear-gradient(to bottom, hsl(180, 100%, 35%), #008081);
+     animation: progress-bar-6 6s 1 ease;
+
+ }
+
+ @keyframes progress-bar-6 {
+     0% {
+         width: 20%;
+     }
+
+     100% {
+         width: 95%;
+     }
+ }
+
+ /*End progress bar .. (into Resume section)*/
+ /* Start button that named Download CV ... into Resume Section */
+ .downloadcv {
+     background-color: #009688;
+     color: #FFF;
+     max-width: 160px;
+     font-weight: bold;
+     padding: 10px;
+     border-radius: 10px;
+     letter-spacing: 1px;
+     margin: 5px -13px;
+     border: 2px solid rgb(82 112 82 / 98%);
+     transition: ease-in-out 1.9s;
+     box-shadow: inset 0 0 0 0 #009688;
+
+ }
+
+ .downloadcv:hover {
+     box-shadow: inset 160px 1px 1px 1px #000;
+ }
+
+ /* End button that named Download CV ... into Resume Section */
+
+ /* End arrangment the "Resume" section that content title A summary of My Resume ... atc in screen from 0 TO 250px */
+ /* Start Portifilio*/
+
+
+ #gallery h4 {
+     padding: 4px 8px;
+     font-size: 17px;
+     text-align: center;
+     background-color: #62622299;
+     margin: 10px auto;
+     max-width: 100px;
+ }
+
+ .gallery {
+     /* max-width: 800px; */
+     width: auto;
+     height: auto;
+     margin: auto;
+     border: 1px solid #CCC;
+     padding: 3px;
+     background-color: #FFF;
+
+ }
+
+ .gallery #masterr {
+     width: 100%;
+ }
+
+ .gallery .master-img {
+     width: 100%;
+     position: relative;
+
+ }
+
+ .gallery .master-img i {
+     padding: 10px;
+     position: absolute;
+     top: 200px;
+     cursor: pointer;
+     z-index: 2;
+     font-size: 30px;
+     color: rgb(82 112 82 / 98%)
+ }
+
+ .gallery .master-img .fa-chevron-left {
+     left: 7%;
+
+
+ }
+
+ .gallery .master-img .fa-chevron-right {
+     right: 7%;
+
+
+ }
+
+ .gallery img {
+     max-width: 100%;
+
+
+ }
+
+ .gallery .master-img {
+     display: block;
+     max-width: 100%;
+     min-width: 100%;
+
+ }
+
+ .gallery .thumbnails {
+     text-align: center;
+     display: inline-block;
+     border: 1px solid #FFF;
+     max-width: 100%;
+     margin: 0 5px;
+     cursor: pointer;
+ }
+
+ .gallery .thumbnails img {
+     width: 19.6%;
+     float: left;
+     border: 3px solid #BBB;
+     cursor: pointer;
+     display: block;
+     -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+     -o-transition: all .4s ease-in-out;
+     transition: all .4s ease-in-out;
+     opacity: .5
+ }
+
+ .gallery .thumbnails img.selected {
+     border: 3px solid rgb(82 112 82 / 98%);
+     opacity: 1
+ }
+
+
+
+ .gallery .thumbnails img:last-child {
+     margin-right: 0 !important;
+ }
+
+ /* End solutions*/
+ /* End Portifilio*/
+
+
+
+
+ /* End new organize for Gallery */
+
+ /*Start faq section that content of Keyboard On desk or Office */
+ #faq {
+     height: auto;
+     width: 100%;
+
+ }
+
+ #faq .container-faq {
+     width: 100%;
+     height: 515px;
+     margin-left: 0px;
+     margin-top: -32px;
+ }
+
+ .container-faq .faqpic_overlay {
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 96%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     transition: opacity .2s ease-in-out;
+     background-color: #0000009e;
+
+ }
+
+
+ .container-faq .faqpic__image {
+     width: 100%;
+     height: 95%;
+ }
+
+ #faq h2 {
+     position: relative;
+     top: 78px;
+     font-size: 30p;
+     left: 0px;
+     font-size: 22px;
+     z-index: 9;
+     color: #FFF;
+ }
+
+ .container-faq button a {
+     color: #FFF;
+ }
+
+ .container-faq button {
+     max-width: 190px;
+     width: 100%;
+     padding: 15px;
+     background-color: #62622299;
+     text-align: center;
+     border: none;
+     position: absolute;
+     border: 2px solid #FFF;
+     border-radius: 10px;
+     top: 128px;
+     margin: 57px -54px;
+     display: inline-block;
+     animation: scale-in-hor-center 1s ease 0s 1 normal none;
+ }
+
+ @keyframes scale-in-hor-center {
+     0% {
+         transform: scaleX(0);
+         opacity: 1;
+     }
+
+     100% {
+         transform: scaleX(1);
+         opacity: 1;
+     }
+ }
+
+ .container-faq button a:hover {
+     font-weight: bold;
+     text-decoration: none;
+ }
+
+ /*END faq section that content of Keyboard On desk or Office*/
+ /* start Ocrdion */
+ .faqqq h5 {
+     font-size: 1rem;
+     background-color: #62622299;
+     padding: 5px;
+     text-align: center;
+     font-weight: 500;
+     width: 60px;
+ }
+
+
+ .faqqq h2 {
+     font-weight: bold;
+     font-size: 35px;
+
+     margin: -14px 0px 18px 0px;
+
+     line-height: 45px;
+ }
+
+ /* Start section Accordion that content summary details in basic format*/
+
+ details {
+     padding: 0 1rem;
+     margin-left: -60px;
+ }
+
+ details>summary {
+     justify-content: space-between;
+     padding: 0px;
+     max-width: 375px;
+     width: 100%;
+     font-size: 18px;
+     cursor: pointer;
+     list-style: none;
+     font-weight: bold;
+     margin: 15px 15px 0px 40px;
+     text-align: left;
+     color: #6d72749e;
+ }
+
+ .fa-chevron-circle-up {
+     color: rgb(82 112 82 / 98%);
+     font-size: 35px;
+     margin-left: -25px;
+     padding: 10px 13px;
+
+ }
+
+ .icon-arrow-circle-down {
+     color: rgb(82 112 82 / 98%);
+     font-size: 20px;
+     margin-right: 10px;
+ }
+
+ details p {
+     margin-left: 69px;
+     text-align: left;
+     width: auto;
+     height: auto;
+ }
+
+ details p::first-letter {
+     font-size: 2vw;
+     color: #e9e94399;
+     margin-left: 8px;
+     font-weight: bold;
+ }
+
+ /* End Ocrdion */
+
+ /* End section Accordion that content summary details in basic format*/
+
+ #biglamp {
+     margin-top: -170px;
+     margin-left: 20px;
+ }
+
+ #biglamp .lampimg {
+     width: auto;
+     max-width: 455px;
+     height: 465px;
+     margin: 69px 4px 50px 64px;
+ }
+
+
+
+
+ /* start testmonial */
+
+ /* start the carosule that above what some of clients says */
+ #clientSpeak {
+     margin-left: 10px;
+ }
+
+
+ #carouselExampleCaptions h4 {
+     position: relative;
+     top: 65px;
+     left: -34px;
+     padding: 4px 8px;
+     font-size: 17px;
+     text-align: center;
+     background-color: #62622299;
+     margin: 10px auto;
+     display: inline-block;
+     z-index: 9;
+ }
+
+ #carouselExampleCaptions .carousel-inner .carousel-item #pic {
+     position: relative;
+     margin-top: -61px;
+ }
+
+ #carouselExampleCaptions h1 {
+     color: #FFF;
+     position: absolute;
+     top: 125px;
+     left: 325px;
+     font-size: 45px;
+     font-weight: bold;
+     z-index: 9;
+ }
+
+ .carousel-caption p {
+     position: absolute;
+     font-size: 20px;
+     letter-spacing: 2px;
+     right: 15%;
+     top: -59%;
+     left: 15%;
+     z-index: 10;
+     color: #fff;
+     text-align: center;
+ }
+
+
+
+ .carousel-item #client {
+     margin-bottom: -5px;
+ }
+
+ .carousel-item h5 {
+     color: #FFF;
+     margin: 10px 0px 15px 0px;
+     font-size: 22px;
+ }
+
+ .carousel-item h6 {
+     color: #b7bdb3;
+     margin: 15px 0px 30px 0px;
+     font-size: 20px;
+     padding: 0px 5px;
+ }
+
+
+ #carouselExampleCaptions li {
+     background-color: #fff;
+     width: 25px;
+     height: 25px;
+     border: 2px solid #FFF;
+     border-radius: 50%;
+     cursor: pointer;
+
+
+ }
+
+ #carouselExampleCaptions li.active {
+     background-color: #fff;
+     width: 25px;
+     height: 25px;
+     border: 4px solid #ffa502;
+     border-radius: 50%;
+
+
+ }
+
+
+
+
+
+
+ /* End testimonal*/
+
+ /* start Contact Section */
+
+ #contact {
+     background-color: #80808040;
+ }
+
+ .contactLeft {
+     padding: 20px 10px 20px 20px;
+ }
+
+ .contactLeft h3 {
+
+     color: #000;
+     text-align: left;
+     font-weight: bold;
+ }
+
+ .contactLeft h1 {
+     color: #000;
+     text-align: left;
+     font-weight: bold;
+     font-size: 44px;
+ }
+
+ .contactLeft .injoy {
+     color: #000;
+     text-align: left;
+     font-size: 26px;
+     max-width: 510px;
+ }
+
+ .contactLeft h5 {
+     color: #000;
+     text-align: left;
+     font-weight: bold;
+
+ }
+
+ .contactLeft .sham {
+     color: #000;
+     text-align: left;
+     font-size: 22px;
+     margin: 10px 0px;
+ }
+
+ .contactLeft p {
+     color: #000;
+     text-align: left;
+     font-size: 22px;
+     margin: 30px 0px;
+ }
+
+ .contactLeft .cantactIcons {
+     text-align: left;
+     margin: 20px -27px;
+     font-size: 17px;
+ }
+
+ .contactLeft .cantactIcons i {
+     color: #000;
+     text-align: left;
+     font-size: 30px;
+     padding: 5px 10px;
+     margin: 0px;
+     cursor: pointer;
+ }
+
+ .contactLeft .cantactIcons .fa-twitter:hover {
+     color: #00b3ff;
+
+ }
+
+ .contactLeft .cantactIcons .fa-github:hover {
+     color: #3a3333;
+
+ }
+
+
+ .contactLeft .cantactIcons .fa-instagram:hover {
+     color: gray;
+
+ }
+
+
+ .contactLeft .cantactIcons .fa-facebook-official:hover {
+     color: rgb(81, 81, 216);
+
+ }
+
+
+ .contactLeft .cantactIcons .fa-dribbble:hover {
+     color: #e21a95;
+
+ }
+
+ /* start Contact Section ... "right section" */
+ .contactRight {
+     margin-top: 50px;
+ }
+
+ .contactRight h1 {
+     color: #000;
+     text-align: left;
+     font-weight: bold;
+     font-size: 41px;
+     margin-top: -33px;
+
+ }
+
+ .contactRight input {
+     border: none;
+     outline: none;
+ }
+
+ .wrapper {
+
+
+     /* background-color: #FFF; */
+
+
+
+ }
+
+ .wrapper h2 {
+     text-align: center;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+     color: #332902;
+ }
+
+ .wrapper .input_field {
+     margin-bottom: 10px;
+ }
+
+ .wrapper .input_field input[type="text"],
+ .wrapper .input_field input[type="number"],
+ .wrapper textarea {
+     width: 100%;
+     /* border: 1px solid #e0e0e0; */
+     padding: 10px;
+     background-color: transparent;
+     border-bottom: 1.4px solid gray;
+     outline: none;
+ }
+
+ .wrapper textarea {
+     height: 80px;
+     resize: none;
+ }
+
+ .wrapper .btnn input[type="submit"] {
+     border: 0;
+     margin-top: 15px;
+     padding: 10px;
+     width: 100%;
+     background-color: #62622299;
+     color: #FFF;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 5px;
+     font-weight: bold;
+     border-radius: 25px;
+     cursor: pointer;
+ }
+
+ .wrapper #error_message {
+     margin-bottom: 20px;
+     padding: 0px;
+     background-color: rgb(82 112 82 / 98%);
+     border-radius: 5px;
+     text-align: center;
+     font-size: 14px;
+     color: #FFF;
+     font-weight: bold;
+     transition: all 0.5s ease;
+ }
+
+
+
+
+
+ /* start Contact Section ... "right section" */
+
+ .container .our-form .the-message {
+     display: none;
+ }
+
+ /* End Contact Section */
+ /* start  footer*/
+ .footer {
+     width: 100%;
+     height: 135px;
+     background-color: #000;
+     color: #FFF;
+     margin-top: -112px;
+
+ }
+
+ .footer .cop {
+
+     font-size: 20px;
+     text-align: center;
+     margin-top: 30px;
+ }
+
+ .footer .cop a {
+     color: #ffa502;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+
+ .footer .design {
+
+     font-size: 19px;
+     text-align: center;
+     margin-top: 30px
+ }
+
+ .footer .design a {
+     color: #ffa502;
+     font-weight: bold;
+     text-decoration: underline;
+ }
+
+
+
+ .footer .footerIcons i {
+     color: #FFF;
+     text-align: left;
+     font-size: 30px;
+     padding: 1px 37px;
+     margin: 4px 0x;
+     cursor: pointer;
+ }
+
+ .footer .footerIcons .fa-twitter:hover {
+     color: #00b3ff;
+
+ }
+
+ .footer .footerIcons .fa-github:hover {
+     color: #3a3333;
+
+ }
+
+
+ .footer .footerIcons .fa-instagram:hover {
+     color: gray;
+
+ }
+
+
+ .footer .footerIcons .fa-facebook-official:hover {
+     color: rgb(81, 81, 216);
+
+ }
+
+
+ .footer .footerIcons .fa-dribbble:hover {
+     color: #e21a95;
+
+ }
+
+
+
+ /* End  footer*/
+

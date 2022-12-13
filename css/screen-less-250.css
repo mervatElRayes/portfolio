@@ -1,0 +1,279 @@
+@media (min-width:0px) and (max-width:250px) {
+ 
+
+
+    nav .navbar-brand p {
+        font-size: 30px;
+        font-weight: bold;
+        color: #FFF;
+        margin-left: 35px;
+    }
+
+    /* start Home Section */
+   .movy {
+        flex-direction: column-reverse;
+    }
+
+    #home .wrapper {
+        margin-left: 20px;
+    }
+
+    .myMervat {
+
+        float: right;
+        margin-top: 140px;
+        margin-right: 10px;
+
+
+    }
+
+    .mervat {
+        height: 195px;
+        width: 195px;
+        margin-top: -30px;
+
+    }
+
+    .main-wrapper {
+        margin-left: -16px;
+    }
+
+    .wrapper .static-txt {
+        color: #FFF;
+        font-size: 25px;
+        /* margin-top: 15px */
+    }
+
+    .dynamic-txts li {
+        font-size: 30px;
+        margin-left: 157px;
+        margin-top: 30px;
+        line-height: 50px;
+        height: 59px;
+        overflow: hidden;
+    }
+
+    .wrapper .static-txt {
+        color: #FFF;
+        font-size: 22px;
+        margin-top: 50px;
+    }
+
+    /* start botton called view my works */
+    .links {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        margin-top: 72px;
+        margin-left: 185px;
+    }
+
+    .links .veiw a {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .links .veiw {
+        padding: 0px;
+        height: 58px;
+        width: 200px;
+        font-size: 14px;
+        text-align: center;
+        background: none;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 0 grey;
+        transition: ease-in-out 1.9s;
+        border: 1px solid #FFF;
+        outline: none;
+        margin-left: -172px;
+        margin-top: -76px;
+
+    }
+
+    .links .contct {
+        width: 100%;
+        background: none;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-size: 25px;
+    }
+
+    .links .contct a {
+        font-weight: 600;
+        color: #FFF;
+        text-decoration: none;
+        margin-left: -206px;
+    }
+
+    .links .contct a:hover {
+        color: crimson;
+    }
+
+    .links .contct .fa-caret-down {
+        margin: 20px 4px;
+        font-size: 25px;
+    }
+
+    .arrwo .fa-arrow-down {
+        font-size: 20px;
+        color: #FFF;
+        margin-left: -14px;
+        animation: bounce-top 1s ease 0s infinite normal none;
+    }
+
+    .arrwo .fa-arrow-down:hover {
+        color: crimson;
+    }
+
+    /* End botton called view my works */
+
+    /* End Home Section */
+    /************** Start About sction **************/
+
+    .about .about-content .left img {
+        width: 145px;
+        height: 220px;
+
+    }
+
+    .max-width {
+        max-width: 195px;
+        padding: 0px;
+        margin: auto;
+
+    }
+
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+
+    .about .about-content .right .text {
+        font-size: 19px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        margin-left: -8px;
+    }
+
+
+    /************** End About sction **************/
+
+    /*Start Services section */
+    .services .serv-content .card {
+        width: 100%;
+        margin: 8px;
+
+    }
+
+    section .title {
+        position: relative;
+        text-align: center;
+        font-size: 29px;
+        margin-bottom: 34px;
+        padding-bottom: 27px;
+    }
+
+    section .title::after {
+
+        font-size: 13px;
+    }
+
+    section .title::before {
+        width: 160px;
+    }
+
+    /*End Services section */
+    /* start Skills section */
+
+
+    .skills .skills-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+
+
+
+    /* End Skills section */
+
+
+
+
+    /* start contact */
+
+
+    section .title::after {
+        font-size: 12px;
+    }
+
+    .contactLeft .injoy {
+        font-size: 14px;
+    }
+
+    .contactLeft .sham {
+        font-size: 16px;
+    }
+
+    .contactLeft .cantactIcons i {
+        padding: 3px;
+        margin-left: 5px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .wrapper .btnn input[type="submit"] {
+        width: 85%;
+    }
+
+    /* End contact */
+
+    /* start Footer*/
+
+    footer {
+        background-color: #111;
+        padding: 15px 19px 183px 23px;
+        color: #FFF;
+    }
+
+    footer .created {
+        float: left;
+        font-size: 18px;
+    }
+
+    footer a {
+        color: #FFF;
+        font-size: 21px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    footer a:hover {
+        font-size: 20px;
+        color: crimson;
+
+    }
+
+    .cantactIcon-i2 {
+        float: right;
+    }
+
+    .cantactIcon-i2 i {
+        padding: 12px 5px 10px 0px;
+        color: #FFF;
+        font-size: 21px;
+        margin: 10px 5px 10px 0px;
+    }
+
+    /* End Footer*/
+}

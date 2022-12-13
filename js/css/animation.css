@@ -1,0 +1,43 @@
+/* Animation For Bigger Screen*/
+@keyframes down {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+
+/* header {
+    animation: down 1s 1;
+} */
+
+/* animation for heart */
+
+.span {
+    animation: heart 1s infinite linear;
+}
+
+@keyframes heart {
+
+    0%,
+    100% {
+        opacity: 0;
+        color: #e9e94399;
+        font-size: 26px;
+        text-shadow: -1px -6px 4px rgb(82 112 82 / 98%);
+
+    }
+
+
+    50% {
+        opacity: 1;
+
+
+    }
+
+
+}

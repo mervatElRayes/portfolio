@@ -1,0 +1,1028 @@
+@media (min-width:0px) and (max-width:250px) {
+
+    /* start navbar "header" */
+    nav {
+        width: 100%;
+        background-color: #000;
+        height: 8rem;
+        position: fixed;
+        right: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 99;
+    }
+
+    nav .navbar-brand p {
+        margin-left: 7px;
+    }
+
+
+
+    .nav-list {
+        width: 100%;
+        height: 81vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        position: fixed;
+        left: 0;
+        bottom: -100vh;
+        transition: bottom 650ms;
+        z-index: 99
+    }
+
+    .nav-link {
+        font-size: 15px;
+        text-decoration: none;
+        display: block;
+        margin: 0px .2rem;
+        color: #FFF;
+        /* margin: 0px 0px 0px -1px; */
+        font-weight: bold;
+        transform: scale(0);
+        transition: transform 650ms;
+
+    }
+
+
+    .nav-item {
+        position: relative;
+        line-height: 2.5rem;
+        transition-delay: .5s;
+        visibility: hidden;
+    }
+
+
+    .nav-item a {
+        margin-left: -10px;
+    }
+
+    .nav-list.open {
+        bottom: -16px;
+    }
+
+    .cantactIcon-i {
+        display: block;
+
+    }
+
+    .cantactIcon-i .fa {
+        color: #FFF;
+        font-size: 22px;
+        display: inline;
+        padding: 4px;
+    }
+
+    /* end navbar "header" */
+
+
+
+
+
+
+
+    .blockk {
+        min-height: auto;
+    }
+
+    /* start organize button to top*/
+    .progressbar {
+        position: fixed;
+        top: 57%;
+        right: 5%;
+    }
+
+    /* End organize button to top*/
+    .movy {
+        flex-direction: column-reverse;
+    }
+
+
+    .hero {
+        height: 170px;
+        margin-left: -25px;
+        border-radius: 50%;
+        border: 10px solid rgb(82 112 82 / 98%);
+        animation: scale-in-center 3s ease 0s 1 normal none;
+    }
+
+    @keyframes scale-in-center {
+        0% {
+            transform: scale(0.75);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+
+    .box h2 {
+        color: #fff;
+        font-size: 1.8em;
+        text-align: left;
+        font-weight: 600;
+        padding: 5px;
+        letter-spacing: 0.1em;
+        text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff;
+    }
+
+    .boxx {
+        margin-top: 40px;
+    }
+
+    /* start arrangement the pragraph HI I'm FreeLancer*/
+    .typer {
+        font-size: 24px;
+        text-align: center;
+        color: #FFF;
+        letter-spacing: 1.7px;
+        margin-left: -25px;
+        margin-top: 37px;
+        line-height: 45px;
+        text-shadow: -1px -6px 4px rgb(70 206 70 / 98%);
+    }
+
+    /* End arrangement the pragraph HI I'm FreeLancer*/
+
+    .links {
+        height: 110px;
+        outline: none;
+
+    }
+
+    .links .veiw a {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: bold;
+    }
+
+    .links .veiw {
+        padding: 15px 50px;
+        height: 100%;
+        font-size: 19px;
+        margin-left: -20px;
+        background-color: rgb(82 112 82 / 98%);
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 0 #009688;
+        transition: ease-in-out 1.9s;
+        border: 1px solid rgb(82 112 82 / 98%);
+        outline: none;
+    }
+
+
+    .links .veiw:hover {
+        box-shadow: inset 222px 1px 1px 1px #000;
+    }
+
+
+    .contct {
+        background-color: #000;
+        border: none;
+    }
+
+    .contactMe {
+        font-size: 20px;
+        color: green;
+        margin: 12px 7px;
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    .contactMe::before {
+        color: rgb(82 112 82 / 98%);
+        background-color: transparent;
+        font-weight: bold;
+        content: "Contact Me";
+        font-size: 19px;
+        margin: 8px 0px;
+        text-decoration: underline;
+        padding: 6px 12px;
+
+    }
+
+    .arrwo {
+        text-align: center;
+        bottom: 0px;
+        position: relative;
+    }
+
+    .arrwo .fa-arrow-down {
+        font-size: 20px;
+        color: rgb(82 112 82 / 98%);
+        cursor: pointer;
+        animation: bounce-top 1s ease 0s infinite normal none;
+
+    }
+
+    @keyframes bounce-top {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* start fixed-menu */
+    .fixed-menu {
+
+        position: fixed;
+        left: -220px;
+        top: 130px;
+        height: 150px;
+        min-width: 209px;
+
+    }
+
+    /* End fixed-menu */
+    /********************Start About Section*************/
+    /* start arrangment the about section that content of circle "22" ... atc in screen from 0 TO 250px */
+
+    #about {
+        height: auto;
+    }
+
+    #about h4 {
+        padding: 2px 5px;
+        font-size: 17px;
+        background-color: #62622299;
+        margin: 10px auto;
+        max-width: 110px;
+
+    }
+
+
+
+
+    .yearsExper h2 .sherif {
+        border-bottom: 4px solid #62622299;
+        font-weight: bold;
+        font-size: 25px;
+        color: #000;
+        font-weight: bold;
+        display: inline-block;
+        padding: 4px;
+        line-height: 33px;
+    }
+
+    .yearsExper h2 .shicko {
+        border-bottom: 4px solid #e9e94399;
+        font-weight: bold;
+        font-size: 25px;
+        color: #000;
+        font-weight: bold;
+        display: inline-block;
+        padding: 4px;
+        line-height: 33px;
+    }
+
+    #about {
+        height: auto;
+    }
+
+
+
+    #about h1 {
+        margin: 20px 10px 55px 5px;
+        font-weight: bold;
+        font-size: 39px;
+    }
+
+    .year {
+        margin-top: 28px;
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .yearsExper h2 {
+        color: #000;
+        margin-bottom: 20px;
+        margin-left: -7px;
+    }
+
+    .yearsExper h2 .shicko {
+        border-bottom: 4px solid #62622299;
+        font-weight: bold;
+        font-size: 35px;
+        color: #000;
+        font-weight: bold;
+        display: inline-block;
+        padding: 4px;
+        line-height: 33px;
+    }
+
+    .yearsExper .pragrph {
+        font-size: 17px;
+    }
+
+
+
+
+
+
+
+    .twinty {
+        background-color: #62622299;
+        border-radius: 50%;
+    }
+
+    .twinty p {
+        font-size: 45px;
+        font-weight: bold;
+
+        animation: scale-up-center 1s ease 0s 1 normal none;
+    }
+
+    @keyframes scale-up-center {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.5);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    /*End arrangment the about section that content of circle "22" ... atc in screen from 0 TO 250px */
+    /* start arrangment Icons email, Address, data .... atc into section About Me */
+
+    .dataA {
+        text-align: center;
+        margin: 30px -5px -17px 42px;
+
+    }
+
+    .dataA .pastedPragraph {
+        font-size: 12px;
+    }
+
+    .dataA i {
+        color: #62622299;
+        font-size: 30px;
+    }
+
+    /* End arrangment Icons email, Address, data .... atc into section About Me */
+
+    /* start arrangment the What I do section that content title How I can help your next project ... atc in screen from 0 TO 250px */
+    #what-i-do {
+        height: auto;
+    }
+
+    #what-i-do h4 {
+        padding: 4px 8px;
+        font-size: 17px;
+        text-align: center;
+        background-color: #62622299;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+
+    /* End arrangment the "Resume" section that content title A summary of My Resume ... atc in screen from 0 TO 250px */
+
+
+    #resume h1 {
+        font-size: 26px;
+
+    }
+
+    .resume {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    #resume .resume .my {
+
+        font-size: 21px;
+
+    }
+
+    .resumeA {
+        padding: 0px 0px 5px 33px;
+    }
+
+    .resume .resumeA hr {
+        margin: 10px -2px 10px 8px;
+    }
+
+
+    #resume h3 {
+        font-size: 19px;
+    }
+
+    .resumeA .resumePragraph {
+        font-size: 13px;
+    }
+
+
+    #resume h6 {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+
+
+    #resume .myy {
+        font-size: 22px;
+        margin-left: -15px;
+        margin-top: 59px;
+    }
+
+
+
+    /* Start button that named Download CV ... into Resume Section */
+    .downloadcv {
+        background-color: #009688;
+        color: #FFF;
+        width: 140px;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        margin: 60px -13px;
+        border: 2px solid rgb(82 112 82 / 98%);
+        transition: ease-in-out 1.9s;
+        box-shadow: inset 0 0 0 0 #009688;
+        margin-left: -20px;
+    }
+
+    .downloadcv:hover {
+        box-shadow: inset 160px 1px 1px 1px #000;
+    }
+
+    /* End button that named Download CV ... into Resume Section */
+
+    /* start portifio that content of fruit like orange,craize,apple*/
+
+    .gallery .thumbnails {
+
+        height: auto;
+    }
+
+    .gallery .master-img .fa-chevron-left {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        font-size: 20px;
+    }
+
+
+
+    .gallery .master-img .fa-chevron-right {
+        position: absolute;
+        top: 35%;
+        right: 10%;
+        font-size: 20px;
+    }
+
+    /* End portifio that content of fruit like orange,craize,apple*/
+
+
+
+    /*start featured Work section into section Portfolio that content of 6 images like orange,lamp,clock .... atc */
+
+    /*start featured-work*/
+    /* start organize the sign that content of word "Portifio"*/
+    #Portfolio h4 {
+        padding: 4px 8px;
+        font-size: 17px;
+        text-align: center;
+        background-color: #e9e94399;
+        margin: 10px auto;
+        display: inline-block;
+    }
+
+    #Portfolio .featured-work h2 {
+        font-size: 40px;
+        font-weight: bold;
+        /* margin: -86px -15px -70px -30px; */
+    }
+
+    /* End organize the sign that content of word "Portifio"*/
+
+    /* Start Feature Works ... scroll menu*/
+
+    #Portfolio .featured-work ul li.active {
+        border-bottom: 2px solid #009688;
+        max-width: 80px;
+    }
+
+    #Portfolio .featured-work ul {
+        margin-top: 40px;
+        display: flex;
+        margin-bottom: 50px;
+        /* width: 600px; */
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+        margin: 100px auto;
+
+    }
+
+    #Portfolio .featured-work ul li {
+        border-bottom: 2px solid #009688;
+        max-width: 80px;
+        margin: 10px 16px;
+        padding: 0px 3px;
+        text-align: center;
+        color: gray
+    }
+
+    #Portfolio .featured-work ul li:hover,
+    #Portfolio .featured-work ul li:focus {
+        color: #000;
+    }
+
+    /* End Feature Works ... scroll menu*/
+
+
+
+    /*End featured-work*/
+    /*start scroll menu featured-work*/
+    .featured-work ul {
+        margin-top: 40px;
+        display: flex;
+        margin-bottom: 50px;
+        /* width: 600px; */
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+        margin: 100px auto;
+    }
+
+    /*start profilepic */
+
+    .featured-work .row img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /*End featured Work section into section Portfolio that content of 6 images like orange,lamp,clock .... atc */
+
+
+    /*Start faq section that content of Keyboard On desk or Office */
+    .container-faq .faqpic_overlay {
+        position: absolute;
+        width: 87%;
+        height: 95%;
+        top: 2px;
+        right: 0px;
+        bottom: 0;
+        left: 28px;
+    }
+
+    .container-faq .faqpic__image {
+        margin-left: 10px;
+    }
+
+
+    #faq h2 {
+        left: 9px;
+    }
+
+    .container-faq button {
+        max-width: 105px;
+        width: 100%;
+        padding: 10px;
+        position: absolute;
+        top: 176px;
+        margin: 57px -54px;
+        animation: scale-in-hor-center 1s ease 0s 1 normal none;
+    }
+
+    @keyframes scale-in-hor-center {
+        0% {
+            transform: scaleX(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+
+
+    /*END faq section that content of Keyboard On desk or Office */
+
+    /* start section Accordion that content summary details in basic format*/
+    #biglamp .lamp {
+        flex-direction: column-reverse;
+    }
+
+    .faqqq {
+        overflow: hidden;
+    }
+
+    .faqqq h5 {
+        font-size: 1rem;
+        background-color: #62622299;
+        padding: 5px;
+        width: 70px;
+        height: 30px;
+        text-align: center;
+        font-weight: 500;
+        margin: 10px 14px 24px 17px;
+    }
+
+    .faqqq h2 {
+        font-weight: bold;
+        font-size: 29px;
+        height: 123px;
+        margin: 30px 0px 50px 7px;
+        text-align: left;
+        line-height: 36px;
+        overflow: hidden;
+
+    }
+
+    /* start Image content of deskTop */
+
+    .container-faq .faqpic__image {
+        width: 100%;
+        height: 100%;
+        margin-top: -28px;
+    }
+
+    /* End Image content of deskTop */
+
+
+    details {
+        padding: 0 1rem;
+        margin-left: -60px;
+    }
+
+    details>summary {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        max-width: 155px;
+        width: 100%;
+        font-size: 15px;
+        cursor: pointer;
+        list-style: none;
+        font-weight: bold;
+        margin: 15px 0px 0px 60px;
+        text-align: left;
+        color: #6d72749e;
+    }
+
+    details p::first-letter {
+        font-size: 7vw;
+        color: rgb(82 112 82 / 98%);
+        margin-left: 8px;
+        font-weight: bold;
+    }
+
+
+
+    .fa-chevron-circle-up {
+        color: rgb(82 112 82 / 98%);
+        font-size: 30px;
+        margin-left: -25px;
+        padding: 10px 13px
+    }
+
+    .fa-chevron-circle-down {
+        color: rgb(82 112 82 / 98%);
+        font-size: 30px;
+        margin-left: -25px;
+        padding: 10px 13px
+    }
+
+    details p {
+        margin-left: 12px;
+        width: auto;
+        height: auto;
+
+    }
+
+    #biglamp .lampimg {
+        height: 140px;
+        max-width: 168px;
+        width: auto;
+        margin: 130px 0px 50px -35px;
+    }
+
+    .details-content {
+        margin: 20px 15px;
+    }
+
+    /* End section Accordion that content summary details in basic format*/
+
+    /* start client Speak Section */
+    #carouselExampleDark h6 {
+        padding: 1px 3px;
+        max-width: 100px;
+        margin-left: 30px;
+        margin-top: 35px;
+        background-color: #e9e94399;
+
+    }
+
+
+    /* .carousel {
+        overflow: hidden;
+    } */
+
+    #carouselExampleCaptions h4 {
+        position: relative;
+        top: 65px;
+        left: 0px;
+        padding: 4px 8px;
+        font-size: 17px;
+        text-align: center;
+        background-color: #62622299;
+        margin: 10px auto;
+        display: inline-block;
+        z-index: 9;
+    }
+
+    #carouselExampleCaptions h1 {
+        color: #FFF;
+        position: absolute;
+        top: 155px;
+        left: 2px;
+        font-size: 21px;
+        font-weight: bold;
+        z-index: 9;
+    }
+
+    #carouselExampleDark .carousel-inner {
+        background-color: rgb(80, 80, 26);
+        position: relative;
+        margin-top: 130px;
+
+    }
+
+    #carouselExampleCaptions li {
+        background-color: #fff;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #FFF;
+        border-radius: 50%;
+    }
+
+    #carouselExampleCaptions li.active {
+        background-color: #fff;
+        width: 16px;
+        height: 16px;
+        border: 4px solid #ffa502;
+        border-radius: 50%;
+
+
+    }
+
+
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        margin-top: 475px;
+
+    }
+
+    /*#carouselExampleDark .carousel-caption p {
+        display: none;
+    } */
+
+    #carouselExampleCaptions .carousel-inner {
+        position: relative
+    }
+
+    #carouselExampleCaptions .carousel-inner .carousel-item p {
+        color: #FFF;
+        position: absolute;
+        top: 28px;
+        left: 2px;
+        font-size: 21px;
+        font-weight: bold;
+        z-index: 9;
+    }
+
+    .carousel-item p {
+        color: #FFF;
+        margin-bottom: 30px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    #carouselExampleCaptions .carousel-inner .carousel-item #pic {
+        position: relative;
+
+
+    }
+
+
+
+    #carouselExampleDark .carousel-caption span {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: bold;
+        width: 98px;
+        display: block;
+        margin-left: 12px;
+        margin-top: 15px;
+    }
+
+    #carouselExampleDark .carousel-caption .picSpan {
+        color: gray;
+        font-size: 17px;
+        font-weight: 500;
+        width: 103px;
+        display: block;
+        margin-left: 16px;
+        line-height: 20px;
+        margin-bottom: 100px;
+
+    }
+
+    #carouselExampleDark .carousel-indicators button {
+        width: 10px;
+        height: 10px;
+        background-color: #008081;
+
+        /* border: 3px solid yellow; */
+        border-radius: 50%;
+        margin-bottom: -120px;
+    }
+
+    #carouselExampleDark .carousel-indicators button.active {
+
+        border: 3px solid #ffa502;
+
+    }
+
+    /* End client Speak Section */
+    /* start contact section */
+
+
+    /* Start this is Left Side on section contact*/
+
+
+
+
+    #contact {
+        background-color: #80808054;
+        height: auto;
+    }
+
+    .contactLeft {
+        max-width: 200px;
+        overflow: hidden;
+    }
+
+    #contact .contactLeft {
+        max-width: 200px;
+        width: 100%;
+        height: 548px;
+        margin-left: 10px;
+        padding: 10px 0px 16px 20px;
+    }
+
+    #contact .contactLeft h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .contactLeft h2 {
+        font-size: 37px;
+        font-weight: bold;
+        margin: 20px 0px 36px 0px;
+    }
+
+    .contactLeft .injoy {
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: -14px;
+    }
+
+
+
+    .contactLeft .sham {
+        font-size: 16px;
+    }
+
+    .contactLeft h5 {
+        font-size: 23px;
+        margin: 10px 10px 20px -1px;
+        font-weight: bold;
+    }
+
+    .contactLeft .phone {
+        font-size: 15px;
+        margin: 3px 5px -28px -13px;
+
+
+    }
+
+    .contactLeft .cantactIcons {
+        text-align: left;
+        margin: 30px -27px;
+        font-size: 17px;
+    }
+
+
+
+    .contactLeft .cantactIcons i {
+        color: #000;
+        text-align: left;
+        font-size: 26px;
+        padding: 20px 3px;
+        margin: 5px -9px 5px 10px;
+        cursor: pointer;
+    }
+
+    /*End  this is Left Side on section contact*/
+
+    /*Start this is RIGHT Side on section contact*/
+
+    .contactRight {
+        height: 600px;
+        /* margin-bottom: 544px; */
+    }
+
+    #contact .contactRight h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 35px;
+
+    }
+
+    /*End this is RIGHT Side on section contact*/
+
+
+
+
+
+
+
+
+
+    /* End contact section */
+
+    /* start footer */
+    .footer {
+        width: 100%;
+        height: 185px;
+        background-color: #000;
+        color: #FFF;
+
+
+    }
+
+    .footer .cop {
+        max-width: 203px;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        margin: 10px 5px 10px -5px;
+    }
+
+    .footer .cop a {
+        color: #ffa502;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .footer .design {
+        max-width: 208px;
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        margin: 13px 5px 10px -5px;
+    }
+
+    .footer .design a {
+        color: #ffa502;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .footer .footerIcons i {
+        color: #FFF;
+        text-align: left;
+        font-size: 25px;
+        padding: 1px 5px;
+        margin: 4px 0x;
+        cursor: pointer;
+    }
+
+    /* End  footer*/
+
+}
